@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class BankTransaction {
 
@@ -43,5 +44,10 @@ public class BankTransaction {
         return Double.compare(that.amount, amount) == 0 &&
                 date.equals(that.date) &&
                 description.equals(that.description);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(date, amount, description);
     }
 }
