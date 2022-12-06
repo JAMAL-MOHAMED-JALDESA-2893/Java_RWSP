@@ -9,6 +9,6 @@ public class BankStatementCSVParser {
                 DATE_PATTERN);
         final double amount = Double.parseDouble(columns[1]);
         final String description = columns[2];
-
-
+        return new BankTransaction(date, amount, description);
     }
+}
