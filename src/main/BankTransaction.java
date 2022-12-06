@@ -1,3 +1,5 @@
+package main;
+
 import java.time.LocalDate;
 import java.util.Objects;
 
@@ -28,7 +30,7 @@ public class BankTransaction {
 
     @Override
     public String toString() {
-        return "BankTransaction{" +
+        return "main.BankTransaction{" +
                 "date=" + date +
                 ", amount=" + amount +
                 ", description='" + description + '\'' +

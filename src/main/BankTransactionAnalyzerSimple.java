@@ -1,3 +1,5 @@
+package main;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -6,8 +8,11 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import main.BankStatementCSVParser;
 
 public class BankTransactionAnalyzerSimple {
+    final BankStatementCSVParser bankStatementParser = new BankStatementCSVParser();
+
     private static final String RESOURCES = "src/main/resources/";
 
     public static void main(final String... args) throws
